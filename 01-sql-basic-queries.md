@@ -55,9 +55,9 @@ example, we could round the values to make them easier to read.
 
     SELECT plot_id, species_id, sex, weight, ROUND(weight / 1000.0, 2) FROM surveys;
 
-> ## Challenge
+> ### Challenge
 >
-> Write a query that returns The year, month, day, species_id and weight in mg
+> Write a query that returns the year, month, day, species_id and weight in mg
 
 Filtering
 ---------

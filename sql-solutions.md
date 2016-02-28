@@ -53,7 +53,7 @@ for individuals caught on Plot 1 that weigh more than 75 g.
 	AND surveys.plot_id = 1;
 
 
-**EXERCISE**
+**EXERCISE** --not used?
 
 Write a query that returns day, month, year, species ID for individuals caught
 in January, May and July.
@@ -90,6 +90,11 @@ weight in kilograms (rounded to two decimal places), for rodents captured in
 	WHERE year = 1999
 	ORDER BY species_id;
 
+## 02
+
+**EXERCISE**
+
+Write query that returns: total weight, average weight, and the min and max weights for all animals caught over the duration of the survey. Can you modify it so that it outputs that for a range of weights?
 
 **EXERCISE**
 
@@ -123,6 +128,7 @@ year starting from the most recent records.
 	GROUP BY year, species_id
 	ORDER BY year DESC, COUNT(*) DESC;
 
+#3
 
 **EXERCISE**
 
@@ -148,6 +154,10 @@ plot in descending order.
 	JOIN species ON surveys.species_id = species.species_id
 	GROUP BY species.genus, surveys.plot_id
 	ORDER BY surveys.plot_id, COUNT(*) DESC
+
+
+
+Write a query that finds the average weight of each rodent species (i.e., only include species with Rodent in the taxa field).
 
 **EXERCISE**
 
